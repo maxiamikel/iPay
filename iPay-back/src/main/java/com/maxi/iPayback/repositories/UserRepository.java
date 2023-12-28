@@ -9,7 +9,7 @@ import com.maxi.iPayback.entities.user.User;
 public interface UserRepository extends JpaRepository<User, Long> {
 
     // @Query("SELECT u FROM User u WHERE u.personalId = :personalId ")
-    Optional<User> findByPersonalId(String personalId);
+    User findByPersonalId(String personalId);
 
     Optional<User> findById(Long id);
 }
