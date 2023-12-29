@@ -42,7 +42,7 @@ public class User {
             UserType userType,
             BigDecimal sold) {
         this.firstName = firstName;
-        LastName = lastName;
+        this.LastName = lastName;
         this.personalId = personalId;
         this.email = email;
         this.foneNumber = foneNumber;

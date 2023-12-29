@@ -1,6 +1,7 @@
 package com.maxi.iPayback.serices;
 
 import java.math.BigDecimal;
+import java.util.List;
 import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -65,6 +66,10 @@ public class UserServiceImpl {
 
         userRepository.save(user);
         return user;
+    }
+
+    public List<User> findAllUsers() {
+        return userRepository.findAll();
     }
 
 }
